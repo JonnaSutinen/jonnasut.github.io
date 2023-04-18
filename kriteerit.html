@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+    .content {
+        padding-top: 5px;
+        padding-bottom: 80px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+
+    </div>
+    <div class="collapse navbar-collapse" id="navigointi">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="arviointi.html">Arviointi</a></li>
+        <li class="active"><a href="#">Kriteerit</a></li>
+        <li><a href="tutkinnon-rakenne.html">Tutkinnon rakenne</a></li>
+        <li><a href="tutkinnonosat.html">Tutkinnon osat</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+
+    </div>
+    <div class="col-sm-8 text-left">
+    <main>
+
+
+    <div class="container mt-3">
+      <h2>Arviointikriteerit</h2>            
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Arvosana</th>
+            <th>Opiskelija...</th>
+        </tr>
+        <tr>
+            <td>Tyydyttävä 1</td>
+            <td>toteuttaa työn ohjeiden mukaisesti</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>toimii yhteistyökykyisesti</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>tarvitsee joissakin tilanteissa lisäohjeita</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>hyödyntää työssä tarvittavaa perustietoa</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>muuttaa toimintaansa saamansa palautteen mukaisesti</td>
+        </tr>
+        <tr>
+            <td>Tyydyttävä 2</td>
+            <td>toteuttaa työn oma-aloitteisesti ja ohjeiden mukaisesti</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>toimii yhteistyökykyisesti ja vuorovaikutteisesti</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>tarvitsee vain harvoissa tilanteissa lisäohjeita</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>hyödyntää työssä tarvittavaa tietoa tarkoituksenmukaisesti</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>muuttaa toimintaansa saamansa palautteen ja omien havaintojen mukaisesti</td>
+        </tr>
+        <tr>
+            <td>Hyvä 3</td>
+            <td>toteuttaa työkokonaisuuden itsenäisesti</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>toimii yhteistyökykyisesti ja aloitteellisesti vuorovaikutustilanteissa</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>selviytyy tavanomaisista ongelmanratkaisutilanteista</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>hyödyntää työssä tarvittavaa tietoa monipuolisesti</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>arvioi suoriutumistaan realistisesti</td>
+        </tr>
+        <tr>
+            <td>Hyvä 4</td>
+            <td>suunnittelee ja toteuttaa työkokonaisuuden itsenäisesti</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>toimii yhteistyökykyisesti ja rakentavasti vuorovaikutustilanteissa</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>selviytyy ongelmanratkaisutilanteista hyödyntäen monipuolisia ratkaisutapoja</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>soveltaa työssä tarvittavaa tietoa monipuolisesti ja perustellusti</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>arvioi suoriutumistaan realistisesti sekä tunnistaa vahvuuksiaan ja kehittämisen kohteitaan</td>
+        </tr>
+        <tr>
+            <td>Kiitettävä 5</td>
+            <td>suunnittelee ja toteuttaa työkokonaisuuden itsenäisesti ottaen huomioon muut toimijat</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>toimii yhteistyökykyisesti ja rakentavasti haastavissakin vuorovaikutustilanteissa</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>arvioi suoriutumistaan realistisesti sekä tunnistaa vahvuuksiaan ja kehittämisen kohteitaan</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>soveltaa työssä tarvittavaa tietoa ongelmanratkaisutilanteissa monipuolisesti ja kriittisesti</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>arvioi suoriutumistaan realistisesti ja esittää perusteltuja ratkaisuja osaamisensa kehittämiseen</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>ymmärtää oman työnsä merkityksen osana laajempaa kokonaisuutta</td>
+        </tr>
+
+
+
+    </table>
+</div>
+</main>
+<footer>
+    <p>JonnaSutinen web Design, Copyright &copy; 2023</p>
+</footer>
+
+</body>
+</html>

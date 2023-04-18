@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+    .content {
+        padding-top: 5px;
+        padding-bottom: 80px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navigointi">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="arviointi.html">Arviointi</a></li>
+        <li><a href="kriteerit.html">Kriteerit</a></li>
+        <li class="active"><a href="#">Tutkinnon rakenne</a></li>
+        <li><a href="tutkinnonosat.html">Tutkinnon osat</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+
+    </div>
+    <div class="col-sm-8 text-left">
+
+    <main>
+
+        <section class="content">
+
+    <h1>Tutkinnon muodostuminen</h1>
+    <p>Tieto- ja viestintätekniikan perustutkinnon laajuus on 180 osaamispistettä. Tutkinto muodostuu ammatillisista tutkinnon osista (145 osaamispistettä) ja yhteisistä tutkinnon osista (35 osaamispistettä).</p>
+    <p>Ammatillisista tutkinnon osista pakollisia on 70—115 osaamispistettä ja valinnaisia 30—75 osaamispistettä. </p>
+    <p>Tieto- ja viestintätekniikan perustutkinto sisältää seuraavat tutkintonimikkeet:</p>
+
+    <ul>
+        <li>elektroniikka-asentaja</li>
+        <li>hyvinvointiteknologia-asentaja</li>
+        <li>tietoverkkoasentaja</li>
+        <li>IT-tukihenkilö</li>
+        <li>ohjelmistokehittäjä</li>
+    </ul>
+
+</section>
+</main>
+
+    <footer>
+        <p>JonnaSutinen web Design, Copyright &copy; 2023</p>
+    </footer>
+
+</body>
+</html>
